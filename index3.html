@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>htmlPROJECT</title>
+</head>
+<body>
+
+  <!-- Header with navbar -->
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#resume">Resume</a> 
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Welcome to My Website</h2>
+      <p>This is the home section. Scroll down to see more.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I love building websites with HTML</p>
+      
+      <!-- List Example -->
+      <h3>My Hobbies:</h3>
+      <ul>
+        <li>Coding</li>
+        <li>Gaming</li>
+        <li>Reading</li>
+      </ul>
+    </section>
+
+    <!-- Work Section with Video -->
+    <section id="work">
+      <h2>My Work</h2>
+      <p>Here is a sample video of my project:</p>
+      <video width="320" height="240" controls>
+        <source src="y.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- Resume Section with Table -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>My education and experience:</p>
+      <table border="1" cellpadding="5">
+        <tr>
+          <th>Year</th>
+          <th>Experience</th>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>Web Development Intern</td>
+        </tr>
+        <tr>
+          <td>2023</td>
+          <td>Freelance Projects</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Contact Section with Audio + Form -->
+    <section id="contact">
+      <p>Listen to my introduction:</p>
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+            <h2>Contact Me</h2>
+      <h3>Send me a message:</h3>
+      <form action="submit.html" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+</body>
+</html>
