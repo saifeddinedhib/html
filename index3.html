@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>htmlPROJECT</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <!-- Header with navbar -->
-  <header>
-    <h1>My Website</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#resume">Resume</a> 
-      <a href="#contact">Contact</a>
+  <header class="site-header">
+    <h1 class="main-title">Welcome</h1>
+    <nav class="navbar">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#work">Work</a>
+      <a class="nav-link" href="#resume">Resume</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- Main content -->
-  <main>
-    
+  <main class="main-content">
+
     <!-- Home Section -->
-    <section id="home">
+    <section id="home" class="section-box">
       <h2>Welcome to My Website</h2>
       <p>This is the home section. Scroll down to see more.</p>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section-box">
       <h2>About Me</h2>
       <p>I love building websites with HTML</p>
-      
-      <!-- List Example -->
+
+      <!-- list -->
       <h3>My Hobbies:</h3>
-      <ul>
+      <ul class="hobby-list">
         <li>Coding</li>
         <li>Gaming</li>
         <li>Reading</li>
@@ -42,19 +45,15 @@
     </section>
 
     <!-- Work Section with Video -->
-    <section id="work">
+    <section id="work" class="section-box">
       <h2>My Work</h2>
-      <p>Here is a sample video of my project:</p>
-      <video width="320" height="240" controls>
-        <source src="y.mp4" type="video/mp4">
-      </video>
     </section>
 
     <!-- Resume Section with Table -->
-    <section id="resume">
+    <section id="resume" class="section-box">
       <h2>Resume</h2>
       <p>My education and experience:</p>
-      <table border="1" cellpadding="5">
+      <table class="resume-table">
         <tr>
           <th>Year</th>
           <th>Experience</th>
@@ -71,15 +70,10 @@
     </section>
 
     <!-- Contact Section with Audio + Form -->
-    <section id="contact">
-      <p>Listen to my introduction:</p>
-      <audio controls>
-        <source src="sample.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-            <h2>Contact Me</h2>
+    <section id="contact" class="section-box">
+      <h2>Contact Me</h2>
       <h3>Send me a message:</h3>
-      <form action="submit.html" method="post">
+      <form class="contact-form" action="submit.html" method="post">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br><br>
 
@@ -89,14 +83,17 @@
         <label for="message">Message:</label><br>
         <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
 
-        <button type="submit">Send</button>
+        <div class="form-buttons">
+          <button type="submit" class="btn-primary">cancel</button>
+          <button type="reset" class="btn-danger">submit</button>
+        </div>
       </form>
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="site-footer" id="unique">
     <p>&copy; 2025 My Website</p>
   </footer>
 
