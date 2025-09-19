@@ -1,7 +1,6 @@
-/* Import Roboto font */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Global font */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -9,7 +8,6 @@ body {
   color: #333;
 }
 
-/* Header */
 .site-header {
   background: #000000;
   color: red;
@@ -22,13 +20,12 @@ body {
   font-size: 50px;
 }
 
-/* Navbar inline */
 .navbar {
   margin-top: 15px;
 }
 
 .navbar .nav-link {
-  display: inline-block; /* inline nav */
+  display: inline-block;
   text-decoration: none;
   color: white;
   margin: 0 10px;
@@ -40,7 +37,6 @@ body {
   color: #FFD700;
 }
 
-/* Section styling */
 .section-box {
   background: white;
   padding: 30px;
@@ -49,8 +45,6 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
-/* Table */
 .resume-table {
   width: 100%;
   border-collapse: collapse;
@@ -67,7 +61,6 @@ body {
   color: white;
 }
 
-/* Form */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -77,7 +70,6 @@ body {
   border-radius: 5px;
 }
 
-/* Buttons */
 .btn-primary {
   background: #e30505;
   color: white;
@@ -108,7 +100,6 @@ h1,h2{
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* Footer */
 .site-footer {
   background: #333;
   color: white;
